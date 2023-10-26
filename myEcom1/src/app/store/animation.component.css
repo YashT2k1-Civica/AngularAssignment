@@ -1,0 +1,24 @@
+#background-container {
+  position: relative;
+}
+
+.background-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  background: linear-gradient(135deg, #ff69b4, #87ceeb); /* Customize the background animation */
+  opacity: 0.9; /* Adjust the opacity to make it transparent */
+  z-index: -1; /* Place it behind other content */
+  animation: backgroundAnimation 10s infinite linear; /* Customize the animation */
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}

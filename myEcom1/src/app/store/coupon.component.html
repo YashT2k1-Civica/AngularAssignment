@@ -1,0 +1,49 @@
+<div
+  class="container-fluid d-flex justify-content-center"
+  style="
+    padding-bottom: 10%;
+    background: #d38312; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #a83279,
+      #d38312
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #a83279,
+      #d38312
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  "
+>
+  <div class="card mt-5" style="width: 18rem">
+    <img
+      src="https://i.pinimg.com/originals/06/65/fd/0665fd48250c662ca9b83fa8b75c9f22.jpg"
+      class="card-img-top"
+      alt="..."
+    />
+    <div class="card-body" style="background-color: #fffdfa">
+      <h5 class="card-title">Early Bird Discount</h5>
+      <p class="card-text">
+        "Be an early bird and catch the best deals! Get an extra 50% discount on
+        your purchase before"
+      </p>
+      <div class="d-flex justify-content-between">
+        <a
+          [routerLink]="['/store']"
+          routerLinkActive="router-link-active"
+          class="btn btn-success"
+          (click)="getDiscount()"
+          >Save Coupon</a
+        >
+
+        <a
+          [routerLink]="['/store']"
+          routerLinkActive="router-link-active"
+          class="btn btn-danger"
+          (click)="noDiscount()"
+          >Close</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
